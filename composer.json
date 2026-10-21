@@ -1,0 +1,20 @@
+{
+    "name": "magebooster/module-rubik",
+    "description": "Rubikpara 3D Secure payment links for Magento 2 – free, by MageBooster",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*",
+        "magento/framework": "^103.0",
+        "magento/module-payment": "^100.4",
+        "magento/module-sales": "^103.0",
+        "magento/module-checkout": "^100.4",
+        "magento/module-directory": "^100.4",
+        "magento/module-quote": "^101.2"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {"MageBooster\\Rubik\\": ""}
+    }
+}
