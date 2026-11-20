@@ -31,11 +31,13 @@ class Callback implements HttpGetActionInterface, HttpPostActionInterface, CsrfA
     public function execute()
     {
         $incrementId = (string)$this->request->getParam('o');
-        if ($this->returnUrl->isValid($incrementId, (string)$this->request->getParam('s'))) {
-            $order = $this->processor->load($incrementId);
-            if ($order && $this->processor->isOpen($order)) {
-                $this->processor->apply($order, $this->gateway->status($order));
-            }
+        if (!$this->returnUrl->isValid($incrementId, (string)$this->request->getParam('s'))) {
+            // never re-sign an order number that came without a valid signature
+            return $this->redirectFactory->create()->setPath('checkout/cart');
+        }
+        $order = $this->processor->load($incrementId);
+        if ($order && $this->processor->isOpen($order)) {
+            $this->processor->apply($order, $this->gateway->status($order));
         }
         return $this->redirectFactory->create()->setUrl($this->returnUrl->build('mbrubik/payment/result', $incrementId));
     }
