@@ -1,6 +1,6 @@
 # MageBooster_Rubik – Rubikpara for Magento 2
 
-Free (MIT) Rubikpara payment method for Magento Open Source / Adobe Commerce **2.4.9** and Mage-OS (PHP 8.0+ – 8.5).
+Rubikpara payment method for Magento Open Source / Adobe Commerce **2.4.9** and Mage-OS (PHP 8.0+ – 8.5).
 Made by [MageBooster](https://magebooster.com). Türkçe açıklama aşağıda.
 
 ## Install
@@ -49,7 +49,7 @@ For daily Central Bank of Türkiye (TCMB) rates use **MageBooster Currency Rates
 
 - Uses the standard Magento payment renderer (`checkout_index_index` layout + a `Magento_Checkout/js/view/payment/default`
   method renderer), so it works in the native checkout and in one-step checkouts that render standard payment methods,
-  including the free and Pro **MageBooster Checkout**.
+  including **MageBooster Checkout**.
 - It doesn't depend on the native multi-step step navigator.
 - **Hyvä:** the Knockout renderer is for Luma-based checkouts (also a Hyvä theme with the Luma checkout fallback).
   On a Hyvä theme with **MageBooster Checkout**, install `magebooster/module-rubik-hyva` for the method panel; the
@@ -67,15 +67,23 @@ For daily Central Bank of Türkiye (TCMB) rates use **MageBooster Currency Rates
   `linkPaymentStatus`, `linkStatus` and `isSuccess`.
 - The live API address is not public.
 
-## License
+## Licence & copying
 
-MIT. Rubikpara is a trademark of its owner; this module is not made or endorsed by them.
+Commercial licence, see `LICENSE.txt`. Copyright (c) 2026 WebWorks 101 OÜ (MageBooster). All rights reserved.
+
+- One serial number = one production installation (one store domain). Staging and development copies of that same store are allowed.
+- Each serial number and each download is tied to the customer who bought it. Luma and Hyvä editions are separate products with separate serial numbers.
+- You may modify the code for your own licensed store. Keep the copyright and licence notices.
+- Not allowed: copying to other stores, redistributing, reselling, sublicensing, publishing in public repositories, marketplaces or forums, removing licence checks or these notices, sharing serial numbers.
+- In case of unauthorised copying or use, the serial number is revoked without refund, updates and support stop, and WebWorks 101 OÜ may claim damages and take legal action. Estonian law applies; the court is Harju County Court.
+
+Rubikpara is a trademark of its owner; this module is not made or endorsed by them.
 
 ---
 
 # MageBooster_Rubik – Magento 2 için Rubikpara
 
-Magento Open Source / Adobe Commerce **2.4.9** ve Mage-OS için ücretsiz (MIT) Rubikpara ödeme yöntemi (PHP 8.0+ – 8.5).
+Magento Open Source / Adobe Commerce **2.4.9** ve Mage-OS için Rubikpara ödeme yöntemi (PHP 8.0+ – 8.5).
 
 ## Kurulum
 
@@ -120,7 +128,7 @@ sayfasında görünür; müşteriden gösterilenden farklı tutar çekilmez. Gü
 ## Checkout uyumluluğu
 
 - Standart Magento ödeme renderer'ı kullanılır; Magento'nun kendi checkout'unda ve standart ödeme yöntemlerini gösteren tek
-  adımlı checkout'larda (ücretsiz ve Pro **MageBooster Checkout** dahil) çalışır. Çok adımlı step navigator'a bağımlı değildir.
+  adımlı checkout'larda (**MageBooster Checkout** dahil) çalışır. Çok adımlı step navigator'a bağımlı değildir.
 - **Hyvä:** Knockout renderer Luma tabanlı checkout'lar içindir (Luma checkout'a düşen Hyvä teması dahil). Hyvä
   temasında **MageBooster Checkout** ile yöntem paneli için `magebooster/module-rubik-hyva` kurun; yönlendirme onsuz da
   çalışır, çünkü modül `payment/<code>/order_place_redirect_url` değerini `mbrubik/redirect/start` yapar ve
@@ -135,6 +143,14 @@ sayfasında görünür; müşteriden gösterilenden farklı tutar çekilmez. Gü
 - `link-status` ve `return` (iade) yanıtlarının tamamı dokümanda yok; kullanılan alanlar `linkPaymentStatus`, `linkStatus`, `isSuccess`.
 - Canlı API adresi herkese açık değil.
 
-## Lisans
+## Lisans ve kopyalama
 
-MIT. Rubikpara kendi sahibinin markasıdır; bu modül onlar tarafından yapılmamış veya onaylanmamıştır.
+Ticari lisans, bkz. `LICENSE.txt`. Telif hakkı (c) 2026 WebWorks 101 OÜ (MageBooster). Tüm hakları saklıdır.
+
+- Bir seri numarası = bir canlı kurulum (bir mağaza alan adı). Aynı mağazanın test (staging) ve geliştirme kopyaları serbesttir.
+- Her seri numarası ve her indirme, satın alan müşteriye bağlıdır. Luma ve Hyvä sürümleri ayrı ürünlerdir, seri numaraları da ayrıdır.
+- Kodu kendi lisanslı mağazanız için değiştirebilirsiniz. Telif ve lisans notlarını silmeyin.
+- Yasak olanlar: başka mağazalara kopyalamak, dağıtmak, yeniden satmak, alt lisans vermek, herkese açık depolarda, pazar yerlerinde veya forumlarda yayınlamak, lisans kontrolünü ya da bu notları kaldırmak, seri numarasını paylaşmak.
+- İzinsiz kopyalama veya kullanımda seri numarası iade yapılmadan iptal edilir, güncelleme ve destek durur; WebWorks 101 OÜ tazminat isteyebilir ve yasal yola gidebilir. Estonya hukuku geçerlidir; yetkili mahkeme Harju İlçe Mahkemesi'dir (Harju Maakohus).
+
+Rubikpara kendi sahibinin markasıdır; bu modül onlar tarafından yapılmamış veya onaylanmamıştır.
