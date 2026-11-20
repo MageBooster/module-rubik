@@ -2,7 +2,29 @@
     "name": "magebooster/module-rubik",
     "description": "Rubikpara 3D Secure payment links for Magento 2, by MageBooster",
     "type": "magento2-module",
+    "keywords": [
+        "magento2",
+        "magento-2-module",
+        "hyva",
+        "luma",
+        "payment",
+        "rubikpara",
+        "payment-link",
+        "3d-secure",
+        "turkey"
+    ],
+    "homepage": "https://magebooster.com",
     "license": "proprietary",
+    "authors": [
+        {
+            "name": "WebWorks 101 OÜ",
+            "homepage": "https://magebooster.com"
+        }
+    ],
+    "support": {
+        "email": "info@magebooster.com",
+        "docs": "https://github.com/MageBooster/module-rubik/blob/main/docs/HOWTO.en.md"
+    },
     "require": {
         "php": ">=8.0",
         "ext-json": "*",
@@ -14,7 +36,11 @@
         "magento/module-quote": "^101.2"
     },
     "autoload": {
-        "files": ["registration.php"],
-        "psr-4": {"MageBooster\\Rubik\\": ""}
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageBooster\\Rubik\\": ""
+        }
     }
 }
