@@ -15,6 +15,8 @@
                 <can_refund>1</can_refund>
                 <can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
                 <test_mode>1</test_mode>
+                <!-- after "Place order" one-page checkouts (e.g. MageBooster Checkout) send the customer here -->
+                <order_place_redirect_url>mbrubik/redirect/start</order_place_redirect_url>
                 <debug>0</debug>
                 <allowspecific>0</allowspecific>
                 <sort_order>61</sort_order>

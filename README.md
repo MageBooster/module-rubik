@@ -51,8 +51,12 @@ For daily Central Bank of Türkiye (TCMB) rates use **MageBooster Currency Rates
   method renderer), so it works in the native checkout and in one-step checkouts that render standard payment methods,
   including the free and Pro **MageBooster Checkout**.
 - It doesn't depend on the native multi-step step navigator.
-- **Hyvä:** the Knockout renderer is for Luma-based checkouts. Hyvä Checkout needs a small Magewire/Alpine payment
-  component; the server side (redirect, callback, refund) is the same. A Hyvä compatibility module is planned.
+- **Hyvä:** the Knockout renderer is for Luma-based checkouts (also a Hyvä theme with the Luma checkout fallback).
+  On a Hyvä theme with **MageBooster Checkout**, install `magebooster/module-rubik-hyva` for the method panel; the
+  redirect itself works without it, because the module sets `payment/<code>/order_place_redirect_url` to
+  `mbrubik/redirect/start` and MageBooster Checkout sends the customer there after placing. Hyvä Checkout
+  (Magewire) is not supported yet.
+- Payment always happens on the Rubikpara page (hosted payment link), so there is no in-checkout card form.
 
 ## Not tested yet
 
@@ -117,8 +121,11 @@ sayfasında görünür; müşteriden gösterilenden farklı tutar çekilmez. Gü
 
 - Standart Magento ödeme renderer'ı kullanılır; Magento'nun kendi checkout'unda ve standart ödeme yöntemlerini gösteren tek
   adımlı checkout'larda (ücretsiz ve Pro **MageBooster Checkout** dahil) çalışır. Çok adımlı step navigator'a bağımlı değildir.
-- **Hyvä:** Knockout renderer Luma tabanlı checkout içindir. Hyvä Checkout için küçük bir Magewire/Alpine ödeme bileşeni
-  gerekir; sunucu tarafı (yönlendirme, dönüş, iade) aynıdır.
+- **Hyvä:** Knockout renderer Luma tabanlı checkout'lar içindir (Luma checkout'a düşen Hyvä teması dahil). Hyvä
+  temasında **MageBooster Checkout** ile yöntem paneli için `magebooster/module-rubik-hyva` kurun; yönlendirme onsuz da
+  çalışır, çünkü modül `payment/<code>/order_place_redirect_url` değerini `mbrubik/redirect/start` yapar ve
+  MageBooster Checkout sipariş sonrası müşteriyi oraya gönderir. Hyvä Checkout (Magewire) henüz desteklenmiyor.
+- Ödeme her zaman Rubikpara sayfasında (barındırılan ödeme linki) yapılır; ödeme adımında kart formu yoktur.
 
 ## Henüz test edilmeyenler
 
