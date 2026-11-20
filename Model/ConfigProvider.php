@@ -13,9 +13,9 @@ use Magento\Checkout\Model\Session as CheckoutSession;
 class ConfigProvider implements ConfigProviderInterface
 {
     public function __construct(
-        private readonly Settings $settings,
-        private readonly ChargeAmount $chargeAmount,
-        private readonly CheckoutSession $checkoutSession
+        private Settings $settings,
+        private ChargeAmount $chargeAmount,
+        private CheckoutSession $checkoutSession
     ) {
     }
 

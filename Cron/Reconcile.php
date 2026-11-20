@@ -17,10 +17,10 @@ use Magento\Sales\Model\ResourceModel\Order\CollectionFactory;
 class Reconcile
 {
     public function __construct(
-        private readonly CollectionFactory $collectionFactory,
-        private readonly Gateway $gateway,
-        private readonly OrderProcessor $processor,
-        private readonly DebugLog $log
+        private CollectionFactory $collectionFactory,
+        private Gateway $gateway,
+        private OrderProcessor $processor,
+        private DebugLog $log
     ) {
     }
 

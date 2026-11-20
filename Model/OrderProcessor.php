@@ -14,10 +14,10 @@ use Magento\Sales\Model\OrderFactory;
 class OrderProcessor
 {
     public function __construct(
-        private readonly OrderFactory $orderFactory,
-        private readonly OrderRepositoryInterface $orderRepository,
-        private readonly OrderSender $orderSender,
-        private readonly DebugLog $log
+        private OrderFactory $orderFactory,
+        private OrderRepositoryInterface $orderRepository,
+        private OrderSender $orderSender,
+        private DebugLog $log
     ) {
     }
 

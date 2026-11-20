@@ -13,7 +13,7 @@ use Magento\Payment\Gateway\Helper\SubjectReader;
  */
 class RefundCommand implements CommandInterface
 {
-    public function __construct(private readonly Gateway $gateway)
+    public function __construct(private Gateway $gateway)
     {
     }
 

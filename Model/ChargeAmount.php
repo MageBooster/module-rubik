@@ -15,8 +15,8 @@ use Magento\Sales\Api\Data\OrderInterface;
 class ChargeAmount
 {
     public function __construct(
-        private readonly CurrencyFactory $currencyFactory,
-        private readonly Settings $settings
+        private CurrencyFactory $currencyFactory,
+        private Settings $settings
     ) {
     }
 

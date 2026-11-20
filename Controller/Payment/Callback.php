@@ -20,11 +20,11 @@ use Magento\Framework\Controller\Result\RedirectFactory;
 class Callback implements HttpGetActionInterface, HttpPostActionInterface, CsrfAwareActionInterface
 {
     public function __construct(
-        private readonly RequestInterface $request,
-        private readonly RedirectFactory $redirectFactory,
-        private readonly ReturnUrl $returnUrl,
-        private readonly OrderProcessor $processor,
-        private readonly Gateway $gateway
+        private RequestInterface $request,
+        private RedirectFactory $redirectFactory,
+        private ReturnUrl $returnUrl,
+        private OrderProcessor $processor,
+        private Gateway $gateway
     ) {
     }
 

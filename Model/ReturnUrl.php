@@ -12,8 +12,8 @@ use Magento\Framework\UrlInterface;
 class ReturnUrl
 {
     public function __construct(
-        private readonly UrlInterface $url,
-        private readonly EncryptorInterface $encryptor
+        private UrlInterface $url,
+        private EncryptorInterface $encryptor
     ) {
     }
 

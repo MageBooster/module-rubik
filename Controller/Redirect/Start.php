@@ -22,14 +22,14 @@ use Magento\Sales\Model\Order;
 class Start implements HttpGetActionInterface
 {
     public function __construct(
-        private readonly CheckoutSession $checkoutSession,
-        private readonly RedirectFactory $redirectFactory,
-        private readonly ManagerInterface $messageManager,
-        private readonly ChargeAmount $chargeAmount,
-        private readonly Gateway $gateway,
-        private readonly OrderRepositoryInterface $orderRepository,
-        private readonly OrderProcessor $processor,
-        private readonly DebugLog $log
+        private CheckoutSession $checkoutSession,
+        private RedirectFactory $redirectFactory,
+        private ManagerInterface $messageManager,
+        private ChargeAmount $chargeAmount,
+        private Gateway $gateway,
+        private OrderRepositoryInterface $orderRepository,
+        private OrderProcessor $processor,
+        private DebugLog $log
     ) {
     }
 

@@ -13,9 +13,9 @@ use Magento\Framework\Serialize\Serializer\Json;
 class Http
 {
     public function __construct(
-        private readonly CurlFactory $curlFactory,
-        private readonly Json $json,
-        private readonly DebugLog $log
+        private CurlFactory $curlFactory,
+        private Json $json,
+        private DebugLog $log
     ) {
     }
 

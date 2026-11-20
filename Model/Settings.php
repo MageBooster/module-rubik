@@ -14,8 +14,8 @@ class Settings
     public const CODE = 'magebooster_rubik';
 
     public function __construct(
-        private readonly ConfigInterface $config,
-        private readonly EncryptorInterface $encryptor
+        private ConfigInterface $config,
+        private EncryptorInterface $encryptor
     ) {
     }
 

@@ -19,12 +19,12 @@ use Magento\Sales\Model\Order;
 class Result implements HttpGetActionInterface
 {
     public function __construct(
-        private readonly RequestInterface $request,
-        private readonly RedirectFactory $redirectFactory,
-        private readonly CheckoutSession $checkoutSession,
-        private readonly ManagerInterface $messageManager,
-        private readonly OrderProcessor $processor,
-        private readonly ReturnUrl $returnUrl
+        private RequestInterface $request,
+        private RedirectFactory $redirectFactory,
+        private CheckoutSession $checkoutSession,
+        private ManagerInterface $messageManager,
+        private OrderProcessor $processor,
+        private ReturnUrl $returnUrl
     ) {
     }
 

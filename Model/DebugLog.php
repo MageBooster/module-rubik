@@ -13,7 +13,7 @@ class DebugLog
     private const MASK = ['cardnumber', 'cvcnumber', 'cvc', 'cvv', 'expmonth', 'expyear', 'month', 'year', 'password',
         'checkkey', 'secretkey', 'clientsecret', 'signature', 'token', 'accesstoken', 'access_token', 'authorization', 'card'];
 
-    public function __construct(private readonly LoggerInterface $logger, private readonly Settings $settings)
+    public function __construct(private LoggerInterface $logger, private Settings $settings)
     {
     }
 
