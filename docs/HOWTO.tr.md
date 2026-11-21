@@ -127,6 +127,18 @@ bin/magento cache:flush
 
 Rubikpara, sahibinin tescilli markasıdır. Bu modül Rubikpara tarafından yapılmamış ve onaylanmamıştır.
 
+## Lisans kontrolü (seri numarası)
+
+- Seri numarasını **Stores > Configuration > MageBooster > Licenses** sayfasındaki **Rubikpara payments** alanına girin (Hyvä sürümü: **Rubikpara payments (Hyvä edition)**). Seri numarası `MB1` ile başlar.
+- Aynı sayfadaki **License status** tablosu her modülün durumunu gösterir: **Etkin**, **Ek süre** veya **Kapalı**. `bin/magento magebooster:license:status` komutu da aynı bilgiyi verir.
+- Geçerli bir seri numarası yoksa (hiç girilmemiş, geçersiz, süresi dolmuş, başka bir alan adı ya da başka bir ürün için) modül **30 gün** çalışmaya devam eder.
+  - 30 gün, mağaza modülü geçerli seri numarası olmadan ilk gördüğü anda başlar.
+  - Geçerli bir seri numarası girilince ek süre biter. Bu seri numarası sonradan geçersiz olursa (örneğin süresi dolarsa) yeni bir 30 günlük süre başlar.
+- Ek süre boyunca ve sonrasında her yönetim paneli sayfasında kapatılamayan bir bildirim görünür. Bildirimde modülün adı, nedeni, kalan gün sayısı ya da kapandığı tarih yazar. Lisanslar sayfasına ve https://store.magebooster.com/licences/account/ adresindeki seri numaralarınıza bağlantı verir.
+- Müşteriler mağazada hiçbir lisans mesajı görmez. Kontrol mağazanın içinde yapılır, MageBooster'a hiçbir bilgi gönderilmez.
+- Geliştirme adresleri (`localhost`, `127.0.0.1`, `*.localhost`, `*.test`, `*.local`) alan adı kontrolüne takılmaz.
+- **30 gün dolunca:** Rubikpara ödeme yöntemi ödeme sayfasında artık gösterilmez. Başlamış ödemeler yine tamamlanır; iadeler ve mevcut siparişler çalışmaya devam eder.
+
 ## Lisans ve kopyalama
 
 Ticari lisans, bkz. `LICENSE.txt`. Telif hakkı (c) 2026 WebWorks 101 OÜ (MageBooster). Tüm hakları saklıdır.

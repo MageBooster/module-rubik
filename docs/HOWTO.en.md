@@ -119,6 +119,18 @@ Go to **Stores > Configuration > Sales > Payment Methods > Rubikpara · MageBoos
 
 Rubikpara is a trademark of its owner. This module is not made or endorsed by Rubikpara.
 
+## Licence check (serial number)
+
+- Enter the serial in **Stores > Configuration > MageBooster > Licenses**, field **Rubikpara payments** (Hyvä edition: **Rubikpara payments (Hyvä edition)**). The serial starts with `MB1`.
+- The **License status** table on that page shows each module as **Active**, **Grace period** or **Switched off**. `bin/magento magebooster:license:status` shows the same.
+- Without a valid serial (none entered, not valid, expired, another domain or another product) the module keeps working for **30 days**.
+  - The 30 days start the first time the store sees the module without a valid serial.
+  - A valid serial ends the grace period. If that serial later stops being valid (for example it expires), a new 30-day period starts.
+- During and after the grace period, every admin page shows a notice that cannot be closed. It names the module, the reason, and the days left or the date it was switched off, with links to the Licenses page and to your serial numbers at https://store.magebooster.com/licences/account/.
+- Shoppers never see a licence message, and the check runs inside your store: nothing is sent to MageBooster.
+- Development hosts (`localhost`, `127.0.0.1`, `*.localhost`, `*.test`, `*.local`) always pass the domain check.
+- **After the 30 days:** the Rubikpara payment method is no longer offered at checkout. Payments that were already started still complete, and refunds and existing orders keep working.
+
 ## Licence & copying
 
 Commercial licence, see `LICENSE.txt`. Copyright (c) 2026 WebWorks 101 OÜ (MageBooster). All rights reserved.

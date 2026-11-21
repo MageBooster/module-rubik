@@ -86,4 +86,17 @@
             <argument name="logger" xsi:type="object">RubikMonolog</argument>
         </arguments>
     </type>
+    <type name="MageBooster\License\Model\Products">
+        <arguments>
+            <argument name="products" xsi:type="array">
+                <item name="rubik" xsi:type="array">
+                    <item name="label" xsi:type="string">Rubikpara payments</item>
+                    <item name="codes" xsi:type="array">
+                        <item name="rubik" xsi:type="string">rubik</item>
+                        <item name="rubik-hyva" xsi:type="string">rubik-hyva</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
 </config>

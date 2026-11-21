@@ -35,3 +35,7 @@
 "Rubikpara credentials are not set.","Rubikpara credentials are not set."
 "The Rubikpara secret key is not valid.","The Rubikpara secret key is not valid."
 "Ask Rubikpara for the live API address.","Ask Rubikpara for the live API address."
+"Rubikpara payments","Rubikpara payments"
+"Rubikpara payments (Hyvä edition)","Rubikpara payments (Hyvä edition)"
+"Serial number, starts with MB1.","Serial number, starts with MB1."
+"Only if you bought the Hyvä edition: serial number, starts with MB1.","Only if you bought the Hyvä edition: serial number, starts with MB1."

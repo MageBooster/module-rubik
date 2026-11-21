@@ -35,3 +35,7 @@
 "Rubikpara credentials are not set.","Rubikpara bilgileri girilmemiş."
 "The Rubikpara secret key is not valid.","Rubikpara secret key geçersiz."
 "Ask Rubikpara for the live API address.","Canlı API adresini Rubikpara’dan isteyin."
+"Rubikpara payments","Rubikpara ödemeleri"
+"Rubikpara payments (Hyvä edition)","Rubikpara ödemeleri (Hyvä sürümü)"
+"Serial number, starts with MB1.","Seri numarası, MB1 ile başlar."
+"Only if you bought the Hyvä edition: serial number, starts with MB1.","Yalnızca Hyvä sürümünü aldıysanız: seri numarası, MB1 ile başlar."

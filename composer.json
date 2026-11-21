@@ -33,7 +33,8 @@
         "magento/module-sales": "^103.0",
         "magento/module-checkout": "^100.4",
         "magento/module-directory": "^100.4",
-        "magento/module-quote": "^101.2"
+        "magento/module-quote": "^101.2",
+        "magebooster/module-license": "^1.1"
     },
     "autoload": {
         "files": [
